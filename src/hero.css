@@ -10,3 +10,37 @@
 .button-primary:hover { background: var(--accent); }
 .button-secondary { background: var(--surface-dark); border: 1px solid var(--border); color: var(--text-secondary); font-weight: 500; }
 .button-secondary:hover { border-color: var(--text-muted); }
+
+.hero-profile-panel {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: fit-content;
+	margin-top: 0.5rem;
+	padding: 0.75rem 1rem 0.75rem 0.75rem;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 1rem;
+}
+
+.hero-profile-image {
+	width: 4.5rem;
+	height: 4.5rem;
+	border: 2px solid var(--accent);
+	border-radius: 0.75rem;
+	object-fit: cover;
+}
+
+.hero-profile-panel div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	max-width: 18rem;
+}
+
+.hero-profile-panel strong { color: var(--text-primary); }
+.hero-profile-panel span { color: var(--text-muted); font-size: 0.875rem; line-height: 1.5; }
+
+@media (max-width: 640px) {
+	.hero-profile-panel { width: 100%; }
+}

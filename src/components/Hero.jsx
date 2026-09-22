@@ -36,6 +36,22 @@ export default function Hero({ copy }) {
         >
           💬 {copy.whatsapp}
         </a>
+        <a
+          href={`${import.meta.env.BASE_URL}cv.html`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button button-secondary"
+        >
+          ↗ {copy.cv}
+        </a>
+      </div>
+
+      <div className="hero-profile-panel">
+        <img src={`${import.meta.env.BASE_URL}1658849637263.jpg`} alt={copy.photoAlt} className="hero-profile-image" />
+        <div>
+          <strong>{copy.profileTitle}</strong>
+          <span>{copy.profileText}</span>
+        </div>
       </div>
     </header>
   );

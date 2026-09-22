@@ -1,0 +1,23 @@
+.about-section {
+  max-width: 48rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--surface), transparent);
+  border-left: 2px solid var(--accent);
+}
+
+.section-kicker {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-description {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+}

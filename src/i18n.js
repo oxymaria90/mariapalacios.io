@@ -1,5 +1,8 @@
 export const translations = {
   es: {
+    meta: {
+      title: 'María Palacios | Desarrolladora Frontend',
+    },
     nav: {
       photoAlt: 'Foto de perfil de María Palacios',
       darkMode: 'Activar modo oscuro',
@@ -15,6 +18,15 @@ export const translations = {
       email: 'Enviar Correo',
       whatsapp: 'WhatsApp Directo',
       whatsappMessage: 'Hola María, vi tu perfil profesional',
+      cv: 'Ver / imprimir CV',
+      photoAlt: 'María Palacios trabajando como desarrolladora frontend',
+      profileTitle: 'Frontend con intención',
+      profileText: 'Interfaces claras, productos útiles y código mantenible.',
+    },
+    about: {
+      kicker: 'Conoce mi enfoque',
+      title: 'Sobre mí',
+      description: 'Soy desarrolladora de software enfocada en frontend, con experiencia creando productos web y móviles que combinan una buena experiencia de usuario con soluciones técnicas sólidas. Me gusta transformar ideas complejas en interfaces claras, accesibles y fáciles de mantener.',
     },
     skills: {
       title: 'Aptitudes Técnicas',
@@ -55,6 +67,9 @@ export const translations = {
     footer: { description: 'Desarrolladora de Software', backToTop: 'Volver arriba' },
   },
   en: {
+    meta: {
+      title: 'María Palacios | Frontend Developer',
+    },
     nav: {
       photoAlt: 'Profile photo of María Palacios',
       darkMode: 'Activate dark mode',
@@ -70,6 +85,15 @@ export const translations = {
       email: 'Send Email',
       whatsapp: 'Direct WhatsApp',
       whatsappMessage: 'Hello María, I saw your professional profile',
+      cv: 'View / print CV',
+      photoAlt: 'María Palacios working as a frontend developer',
+      profileTitle: 'Frontend with intention',
+      profileText: 'Clear interfaces, useful products, and maintainable code.',
+    },
+    about: {
+      kicker: 'My approach',
+      title: 'About me',
+      description: 'I am a software developer focused on frontend development, with experience creating web and mobile products that combine thoughtful user experiences with solid technical solutions. I enjoy turning complex ideas into clear, accessible, and maintainable interfaces.',
     },
     skills: {
       title: 'Technical Skills',

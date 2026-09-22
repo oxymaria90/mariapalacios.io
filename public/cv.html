@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>María Palacios - CV</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body { max-width: 820px; margin: 0 auto; padding: 48px 32px; color: #172033; font: 15px/1.5 Arial, sans-serif; }
+      header { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; padding-bottom: 24px; border-bottom: 3px solid #14b8a6; }
+      h1 { margin: 0 0 4px; color: #0f766e; font-size: 34px; }
+      h2 { margin: 26px 0 12px; padding-bottom: 5px; border-bottom: 2px solid #99f6e4; color: #0f766e; font-size: 18px; }
+      h3 { margin: 0; font-size: 15px; }
+      p { margin: 0 0 10px; }
+      ul { margin: 0; padding-left: 20px; }
+      li { margin-bottom: 8px; }
+      .muted { color: #64748b; }
+      .contact { text-align: right; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+      .project { margin-bottom: 12px; }
+      .project strong { color: #0f766e; }
+      .print-button { padding: 9px 14px; background: #0f766e; border: 0; border-radius: 6px; color: white; cursor: pointer; font: inherit; }
+      @media (max-width: 640px) { body { padding: 28px 20px; } header { flex-direction: column; } .contact { text-align: left; } .grid { grid-template-columns: 1fr; gap: 0; } }
+      @media print {
+        @page { size: A4; margin: 10mm; }
+        body { max-width: none; padding: 0; font-size: 9.5pt; line-height: 1.3; }
+        header { display: block; padding-bottom: 12px; }
+        h1 { font-size: 27px; }
+        h2 { margin: 14px 0 6px; padding-bottom: 3px; font-size: 14px; }
+        p { margin-bottom: 5px; }
+        li { margin-bottom: 3px; }
+        .grid { display: block; }
+        .contact { margin-top: 4px; text-align: left; }
+        .project { margin-bottom: 5px; }
+        .print-button { display: none; }
+        a { color: inherit; text-decoration: none; }
+        h2 { break-after: avoid; }
+        .project { break-inside: avoid; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>María Palacios</h1>
+        <p class="muted">Frontend Developer · Mérida, Venezuela · Remote</p>
+        <p>React and React Native developer focused on clear interfaces, useful products, and maintainable frontend architecture.</p>
+      </div>
+      <div class="contact">
+        <p><a href="mailto:maria1990palacios@gmail.com">maria1990palacios@gmail.com</a></p>
+        <p><a href="tel:+584125499763">+58 412 549 9763</a></p>
+        <button class="print-button" type="button" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </header>
+
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Frontend Developer · ConLuc Corp.</strong><br />September 2025 - Present<br />Frontend development focused on The Coach Legacy.</li>
+      <li><strong>Quality Assurance Trainee & Intern · Shokworks, Inc.</strong><br />June 2024 - November 2024<br />Manual testing across web and mobile environments.</li>
+      <li><strong>Frontend Web Developer · EstereoCode</strong><br />December 2023 - April 2024<br />React Native, ReactJS, Expo, and PWA development.</li>
+      <li><strong>Frontend Developer · Agile Dream Team</strong><br />March 2023 - August 2023<br />React.js development with Jest and Cypress testing.</li>
+    </ul>
+
+    <div class="grid">
+      <section>
+        <h2>Skills</h2>
+        <p>React · React Native · TypeScript · JavaScript · HTML · CSS · Tailwind CSS · Zustand · Zod</p>
+        <p>Node.js · Firebase · MongoDB · SQL · REST APIs</p>
+        <p>Git · Figma · Jira · Notion · Scrum · Kanban · Jest · Cypress</p>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Computer Engineering</strong><br />UPTM · 2012 - 2016</li>
+          <li><strong>Higher Technician in Computer Science</strong><br />Instituto Universitario Tecnológico de Ejido · 2009 - 2012</li>
+        </ul>
+      </section>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="project"><strong>The Coach Legacy</strong> · Node.js, React.js<br />Fantasy football tournament management platform with teams, tournaments, budgets, and in-app purchases.</div>
+    <div class="project"><strong>Savi Pharma +</strong> · React Native, styled-components<br />Pharmacy promotions and cashback management application.</div>
+    <div class="project"><strong>NuroLeap</strong> · JavaScript, TypeScript<br />Wellness and personal growth application with guided visualizations, learning, and AI support.</div>
+    <div class="project"><strong>Sumate</strong> · React Native<br />Mobile survey and news application for the accountants association of the Dominican Republic.</div>
+
+    <h2>Certifications & Languages</h2>
+    <p>React Native · Asynchronous JavaScript · Introduction to React.js · Advanced English proficiency</p>
+  </body>
+</html>

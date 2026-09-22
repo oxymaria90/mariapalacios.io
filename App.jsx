@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './src/components/Hero';
+import About from './src/components/About';
 import Skills from './src/components/Skills';
 import Experience from './src/components/Experience';
 import Projects from './src/components/Projects';
@@ -23,6 +24,8 @@ function App() {
 
   React.useEffect(() => {
     window.localStorage.setItem('portfolio-language', language);
+    document.documentElement.lang = language;
+    document.title = copy.meta.title;
   }, [language]);
 
   return (
@@ -33,7 +36,7 @@ function App() {
         <div className="nav-inner">
           <div className="brand">
             <img
-              src="/1658849637263.jpg"
+              src={`${import.meta.env.BASE_URL}1658849637263.jpg`}
               alt={copy.nav.photoAlt}
               className="profile-image"
             />
@@ -72,6 +75,7 @@ function App() {
       {/* Main Content Container */}
       <main className="main-content">
         <Hero copy={copy.hero} />
+        <About copy={copy.about} />
         <Skills copy={copy.skills} />
         <Experience copy={copy.experience} />
         <Projects copy={copy.projects} />
