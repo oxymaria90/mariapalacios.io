@@ -1,0 +1,12 @@
+.hero-section { display: flex; flex-direction: column; gap: 1.5rem; padding-top: 1rem; }
+.availability-badge { display: inline-flex; align-items: center; gap: 0.5rem; width: fit-content; padding: 0.25rem 0.75rem; background: rgb(20 184 166 / 10%); border: 1px solid rgb(20 184 166 / 20%); border-radius: 9999px; color: var(--accent); font-size: 0.75rem; font-weight: 600; }
+.availability-dot { width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: var(--accent); animation: pulse 2s infinite; }
+.hero-title { margin: 0; color: var(--text-primary); font-size: clamp(2.25rem, 8vw, 3.75rem); font-weight: 800; letter-spacing: -0.025em; }
+.hero-subtitle { font-size: 1.25rem; font-weight: 500; }
+.hero-description { max-width: 42rem; margin: 0; color: var(--text-secondary); line-height: 1.625; }
+.hero-description strong { color: var(--text-primary); }
+.hero-actions { padding-top: 0.5rem; }
+.button-primary { background: var(--accent-strong); color: var(--page-bg); font-weight: 600; box-shadow: 0 10px 15px rgb(20 184 166 / 10%); }
+.button-primary:hover { background: var(--accent); }
+.button-secondary { background: var(--surface-dark); border: 1px solid var(--border); color: var(--text-secondary); font-weight: 500; }
+.button-secondary:hover { border-color: var(--text-muted); }

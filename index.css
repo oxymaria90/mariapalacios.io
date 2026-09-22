@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "./src/styles.css";
+
+body {
+  background-color: #0f172a; /* Slate 900 */
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+}

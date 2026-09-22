@@ -1,0 +1,68 @@
+:root {
+  --page-bg: #020617;
+  --surface: rgb(30 41 59 / 50%);
+  --surface-dark: #0f172a;
+  --border: rgb(51 65 85 / 50%);
+  --border-dark: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent: #2dd4bf;
+  --accent-strong: #14b8a6;
+  --content-width: 56rem;
+}
+
+.app-shell.light-mode {
+  --page-bg: #f8fafc;
+  --surface: rgb(226 232 240 / 80%);
+  --surface-dark: #e2e8f0;
+  --border: #cbd5e1;
+  --border-dark: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --accent: #0f766e;
+  --accent-strong: #0d9488;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.content-section { display: flex; flex-direction: column; gap: 1.5rem; }
+.section-title { margin: 0; color: var(--text-primary); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.025em; }
+.content-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; }
+.card-title { margin: 0; color: var(--accent); font-weight: 600; }
+.card-title-large { font-size: 1.125rem; }
+
+.contact-email,
+.hero-subtitle,
+.experience-role span,
+.back-to-top,
+.certification-marker { color: var(--accent); }
+
+.contact-email:hover,
+.back-to-top:hover { text-decoration: underline; }
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: background-color 150ms, border-color 150ms;
+}
+
+@keyframes pulse { 50% { opacity: 0.45; } }
+
+@media (max-width: 768px) {
+  .skills-grid,
+  .projects-grid,
+  .education-grid { grid-template-columns: 1fr; }
+}

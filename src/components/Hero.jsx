@@ -1,24 +1,40 @@
 import React from 'react';
 
-export default function Hero() {
+export default function Hero({ copy }) {
   return (
-    <header className="space-y-6 border-b border-slate-800 pb-12">
-      <div className="inline-block px-3 py-1 bg-teal-500/10 text-teal-400 text-xs font-semibold rounded-full border border-teal-500/20">
-        Desarrolladora de Software · Mérida, Venezuela
+    <header className="hero-section">
+      <div className="availability-badge">
+        <span className="availability-dot"></span>
+        {copy.availability}
       </div>
-      <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
-        María Palacios
+
+      <h1 className="hero-title">
+        {copy.title}
       </h1>
-      <p className="text-lg text-slate-400 max-w-2xl leading-relaxed">
-        Desarrolladora frontend especializada en crear aplicaciones web y móviles de alto impacto con React, React Native y TypeScript.
+
+      <div className="hero-subtitle">
+        {copy.subtitle}
+      </div>
+
+      <p className="hero-description">
+        {copy.description} <strong>React, React Native y TypeScript</strong>{copy.descriptionEnd}
       </p>
-      <div className="flex flex-wrap gap-4 text-sm text-slate-300 pt-2">
-        <a href="mailto:maria1990palacios@gmail.com" className="hover:text-teal-400 transition-colors">
-          📧 maria1990palacios@gmail.com
+
+      {/* Action Links / Pills */}
+      <div className="hero-actions">
+        <a 
+          href="mailto:maria1990palacios@gmail.com" 
+          className="button button-primary"
+        >
+          📧 {copy.email}
         </a>
-        <span>•</span>
-        <a href="tel:+584125499763" className="hover:text-teal-400 transition-colors">
-          📱 (+58) 412 549 9763
+        <a 
+          href={`https://wa.me/584125499763?text=${encodeURIComponent(copy.whatsappMessage)}`}
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="button button-secondary"
+        >
+          💬 {copy.whatsapp}
         </a>
       </div>
     </header>
